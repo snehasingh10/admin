@@ -37,9 +37,6 @@ class App extends Component {
             </Switch>
           </React.Suspense>
       </BrowserRouter>
-      app.listen(port, () => {
-          console.log('listening to the port no at ${port}');
-      })
     );
   }
 }

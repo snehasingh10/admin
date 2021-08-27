@@ -1,0 +1,9 @@
+tr, td, th{
+    border: 1px solid black;
+}
+
+.lit-logout{
+    line-height: 70px;
+    font-size: 24px;
+    text-align: center;
+}

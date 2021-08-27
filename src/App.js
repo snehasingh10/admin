@@ -12,6 +12,7 @@ const loading = (
 )
 
 // Containers
+const port =process.env.PORT || 3000;
 const TheLayout = React.lazy(() => import('./containers/TheLayout'));
 
 // Pages
@@ -37,6 +38,11 @@ class App extends Component {
             </Switch>
           </React.Suspense>
       </BrowserRouter>
+
+
+      app.listen(port, () => {
+          console.log('listening to the port no at ${port}');
+      })
     );
   }
 }
